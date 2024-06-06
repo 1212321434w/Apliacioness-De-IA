@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda y Contacto con los Desarrolladores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        h2 {
+            color: #999;
+        }
+        .faq h3, .contact-form h3 {
+            color: #aaa;
+        }
+        .faq h4 {
+            color: #bbb;
+        }
+        .faq p {
+            margin: 10px 0;
+            color: #ddd;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #bbb;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background: #444;
+            color: #ccc;
+        }
+        .contact-form input::placeholder, .contact-form textarea::placeholder {
+            color: #777;
+        }
+        .contact-form button {
+            background-color: #666;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Ayuda y Contacto con los Desarrolladores</h2>
+
+    <div class="faq">
+        <h3>Preguntas Frecuentes</h3>
+        <h4>1. ¿Cómo puedo restablecer mi contraseña?</h4>
+        <p>Para restablecer su contraseña, vaya a la página de inicio de sesión y haga clic en "¿Olvidó su contraseña?". Siga las instrucciones para recibir un enlace de restablecimiento de contraseña.</p>
+
+        <h4>2. ¿Cómo puedo contactar al soporte técnico?</h4>
+        <p>Puede contactar al soporte técnico utilizando el formulario de contacto a continuación o enviándonos un correo electrónico a soporte@ejemplo.com.</p>
+
+        <h4>3. ¿Cómo puedo actualizar mi perfil?</h4>
+        <p>Para actualizar su perfil, inicie sesión en su cuenta y vaya a la sección "Mi Perfil". Desde allí, puede actualizar su información personal.</p>
+    </div>
+
+    <div class="contact-form">
+        <h3>Contacto con los Desarrolladores</h3>
+        <form action="/submit-contact" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<a href="index.html" class="back-button">Volver a la Página de Inicio</a>
+
+</body>
+  
+</html>
